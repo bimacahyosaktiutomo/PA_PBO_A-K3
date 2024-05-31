@@ -8,7 +8,7 @@
 #### 3. Bimasakti Cahyo Utomo 2209106021
 #### 4. Natanael Primus Lung Hanyang Ngau 2209106029
 
-#### Fitur :
+### Fitur :
 #### 1. CRUD Resep
 #### 2. CRUD Akun
 #### 3. Komentar
