@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.SVGPath?>
+<?import javafx.scene.text.Font?>
+
+<ScrollPane fitToHeight="true" fitToWidth="true" hbarPolicy="NEVER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="705.0" prefWidth="600.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.ifandidesignbeurau.pa.ResepFormController">
+   <content>
+      <VBox prefHeight="640.0" prefWidth="598.0" style="-fx-background-color: white;">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="166.0" prefWidth="598.0" spacing="15.0">
+               <children>
+                  <VBox alignment="CENTER_LEFT" prefHeight="197.0" prefWidth="390.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <TextArea fx:id="txtNamaResep" prefHeight="55.0" prefWidth="392.0" promptText="Nama Resep" wrapText="true">
+                           <font>
+                              <Font name="Fira Code SemiBold" size="18.0" />
+                           </font>
+                        </TextArea>
+                        <ChoiceBox fx:id="cbKategori" prefHeight="26.0" prefWidth="408.0" style="-fx-background-color: white; -fx-border-color: grey; -fx-border-width: 0.3px;" />
+                        <TextArea fx:id="txtAuthor" prefHeight="1.0" prefWidth="376.0" promptText="Author">
+                           <font>
+                              <Font name="Fira Code Retina" size="14.0" />
+                           </font>
+                        </TextArea>
+                        <TextArea fx:id="txtDeskripsi" prefHeight="26.0" prefWidth="390.0" promptText="Deskripsi">
+                           <font>
+                              <Font name="Fira Code Retina" size="12.0" />
+                           </font>
+                        </TextArea>
+                        <HBox alignment="CENTER" prefHeight="25.0" prefWidth="392.0" spacing="5.0">
+                           <children>
+                              <SVGPath fx:id="bintang1" content="m11.322 2.923c.126-.259.39-.423.678-.423.289 0 .552.164.678.423.974 1.998 2.65 5.44 2.65 5.44s3.811.524 6.022.829c.403.055.65.396.65.747 0 .19-.072.383-.231.536-1.61 1.538-4.382 4.191-4.382 4.191s.677 3.767 1.069 5.952c.083.462-.275.882-.742.882-.122 0-.244-.029-.355-.089-1.968-1.048-5.359-2.851-5.359-2.851s-3.391 1.803-5.359 2.851c-.111.06-.234.089-.356.089-.465 0-.825-.421-.741-.882.393-2.185 1.07-5.952 1.07-5.952s-2.773-2.653-4.382-4.191c-.16-.153-.232-.346-.232-.535 0-.352.249-.694.651-.748 2.211-.305 6.021-.829 6.021-.829s1.677-3.442 2.65-5.44z" />
+                              <SVGPath fx:id="bintang2" content="m11.322 2.923c.126-.259.39-.423.678-.423.289 0 .552.164.678.423.974 1.998 2.65 5.44 2.65 5.44s3.811.524 6.022.829c.403.055.65.396.65.747 0 .19-.072.383-.231.536-1.61 1.538-4.382 4.191-4.382 4.191s.677 3.767 1.069 5.952c.083.462-.275.882-.742.882-.122 0-.244-.029-.355-.089-1.968-1.048-5.359-2.851-5.359-2.851s-3.391 1.803-5.359 2.851c-.111.06-.234.089-.356.089-.465 0-.825-.421-.741-.882.393-2.185 1.07-5.952 1.07-5.952s-2.773-2.653-4.382-4.191c-.16-.153-.232-.346-.232-.535 0-.352.249-.694.651-.748 2.211-.305 6.021-.829 6.021-.829s1.677-3.442 2.65-5.44z" layoutX="131.0" layoutY="18.0" />
+                              <SVGPath fx:id="bintang3" content="m11.322 2.923c.126-.259.39-.423.678-.423.289 0 .552.164.678.423.974 1.998 2.65 5.44 2.65 5.44s3.811.524 6.022.829c.403.055.65.396.65.747 0 .19-.072.383-.231.536-1.61 1.538-4.382 4.191-4.382 4.191s.677 3.767 1.069 5.952c.083.462-.275.882-.742.882-.122 0-.244-.029-.355-.089-1.968-1.048-5.359-2.851-5.359-2.851s-3.391 1.803-5.359 2.851c-.111.06-.234.089-.356.089-.465 0-.825-.421-.741-.882.393-2.185 1.07-5.952 1.07-5.952s-2.773-2.653-4.382-4.191c-.16-.153-.232-.346-.232-.535 0-.352.249-.694.651-.748 2.211-.305 6.021-.829 6.021-.829s1.677-3.442 2.65-5.44z" layoutX="144.0" layoutY="18.0" />
+                              <SVGPath fx:id="bintang4" content="m11.322 2.923c.126-.259.39-.423.678-.423.289 0 .552.164.678.423.974 1.998 2.65 5.44 2.65 5.44s3.811.524 6.022.829c.403.055.65.396.65.747 0 .19-.072.383-.231.536-1.61 1.538-4.382 4.191-4.382 4.191s.677 3.767 1.069 5.952c.083.462-.275.882-.742.882-.122 0-.244-.029-.355-.089-1.968-1.048-5.359-2.851-5.359-2.851s-3.391 1.803-5.359 2.851c-.111.06-.234.089-.356.089-.465 0-.825-.421-.741-.882.393-2.185 1.07-5.952 1.07-5.952s-2.773-2.653-4.382-4.191c-.16-.153-.232-.346-.232-.535 0-.352.249-.694.651-.748 2.211-.305 6.021-.829 6.021-.829s1.677-3.442 2.65-5.44z" layoutX="157.0" layoutY="18.0" />
+                              <SVGPath fx:id="bintang5" content="m11.322 2.923c.126-.259.39-.423.678-.423.289 0 .552.164.678.423.974 1.998 2.65 5.44 2.65 5.44s3.811.524 6.022.829c.403.055.65.396.65.747 0 .19-.072.383-.231.536-1.61 1.538-4.382 4.191-4.382 4.191s.677 3.767 1.069 5.952c.083.462-.275.882-.742.882-.122 0-.244-.029-.355-.089-1.968-1.048-5.359-2.851-5.359-2.851s-3.391 1.803-5.359 2.851c-.111.06-.234.089-.356.089-.465 0-.825-.421-.741-.882.393-2.185 1.07-5.952 1.07-5.952s-2.773-2.653-4.382-4.191c-.16-.153-.232-.346-.232-.535 0-.352.249-.694.651-.748 2.211-.305 6.021-.829 6.021-.829s1.677-3.442 2.65-5.44z" layoutX="170.0" layoutY="18.0" />
+                           </children>
+                           <padding>
+                              <Insets bottom="5.0" top="10.0" />
+                           </padding>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <ImageView fx:id="imgThumbnail" fitHeight="161.0" fitWidth="185.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../img/iconmonstr-picture-10-240.png" />
+                     </image>
+                  </ImageView>
+               </children>
+               <padding>
+                  <Insets left="5.0" right="5.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="20.0" prefWidth="600.0" spacing="10.0">
+               <children>
+                  <Label text="BAHAN">
+                     <font>
+                        <Font name="Fira Code Retina" size="18.0" />
+                     </font>
+                  </Label>
+                  <Line endX="386.49285888671875" endY="7.748603820800781E-7" startX="-100.0" strokeType="OUTSIDE" HBox.hgrow="ALWAYS" />
+               </children>
+               <padding>
+                  <Insets left="10.0" right="10.0" />
+               </padding>
+            </HBox>
+            <TextArea fx:id="txtBahan" prefHeight="132.0" prefWidth="598.0" promptText="Bahan" wrapText="true">
+               <font>
+                  <Font name="Fira Code Medium" size="14.0" />
+               </font>
+            </TextArea>
+            <HBox alignment="CENTER" prefHeight="0.0" prefWidth="600.0" spacing="10.0">
+               <children>
+                  <Label text="ALAT">
+                     <font>
+                        <Font name="Fira Code Retina" size="18.0" />
+                     </font>
+                  </Label>
+                  <Line endX="404.0928955078125" endY="1.1858010292053223" startX="-100.0" startY="1.1857963800430298" strokeType="OUTSIDE" HBox.hgrow="ALWAYS" />
+               </children>
+               <padding>
+                  <Insets left="10.0" right="10.0" />
+               </padding>
+            </HBox>
+            <TextArea fx:id="txtAlat" layoutX="10.0" layoutY="260.0" prefHeight="114.0" prefWidth="598.0" promptText="Alat" wrapText="true">
+               <font>
+                  <Font name="Fira Code Medium" size="14.0" />
+               </font>
+            </TextArea>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="299.0" prefHeight="0.0" prefWidth="600.0" spacing="10.0">
+               <children>
+                  <Label prefHeight="34.0" prefWidth="134.0" text="INSTRUKSI">
+                     <font>
+                        <Font name="Fira Code Retina" size="18.0" />
+                     </font>
+                  </Label>
+                  <Line endX="618.2805786132812" endY="1.185835361480713" startX="158.24806213378906" startY="1.1858614683151245" strokeType="OUTSIDE" HBox.hgrow="ALWAYS" />
+               </children>
+               <padding>
+                  <Insets left="10.0" right="10.0" />
+               </padding>
+            </HBox>
+            <TextArea fx:id="txtInstruksi" layoutX="10.0" layoutY="332.0" prefHeight="147.0" prefWidth="598.0" promptText="Instruksi" wrapText="true">
+               <font>
+                  <Font name="Fira Code Medium" size="14.0" />
+               </font>
+            </TextArea>
+            <HBox alignment="CENTER_LEFT" prefHeight="46.0" prefWidth="600.0" spacing="15.0">
+               <children>
+                  <Button fx:id="btnSelesai" mnemonicParsing="false" prefHeight="31.0" prefWidth="74.0" styleClass="login-btn" stylesheets="@../../../css/style.css" text="Selesai">
+                     <font>
+                        <Font name="Fira Code SemiBold" size="12.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnLater" layoutX="30.0" layoutY="18.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="146.0" styleClass="login-btn" stylesheets="@../../../css/style.css" text="Selesaikan Nanti">
+                     <font>
+                        <Font name="Fira Code SemiBold" size="12.0" />
+                     </font>
+                  </Button>
+                  <Pane prefHeight="46.0" prefWidth="229.0" HBox.hgrow="ALWAYS" />
+                  <Button fx:id="btnBatal" layoutX="115.0" layoutY="18.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="74.0" style="-fx-background-color: #fa6969;" styleClass="login-btn" stylesheets="@../../../css/style.css" text="Batal">
+                     <font>
+                        <Font name="Fira Code SemiBold" size="12.0" />
+                     </font>
+                  </Button>
+               </children>
+               <padding>
+                  <Insets left="20.0" right="20.0" />
+               </padding>
+            </HBox>
+         </children>
+      </VBox>
+   </content>
+</ScrollPane>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox minHeight="-Infinity" minWidth="-Infinity" prefHeight="592.8" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.ifandidesignbeurau.pa.DashboardUserController">
+   <children>
+      <Separator prefWidth="200.0" />
+      <VBox prefHeight="588.0" prefWidth="782.0" VBox.vgrow="ALWAYS">
+         <children>
+            <HBox fillHeight="false" prefHeight="53.0" prefWidth="782.0" style="-fx-background-color: white;" VBox.vgrow="ALWAYS">
+               <children>
+                  <Label text="Resep Anda">
+                     <font>
+                        <Font name="Fira Code SemiBold" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" top="10.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER" fillHeight="false" prefHeight="85.0" prefWidth="782.0" spacing="20.0" style="-fx-background-color: white;" VBox.vgrow="ALWAYS">
+               <children>
+                  <TextField fx:id="txtSearchData" prefHeight="26.0" prefWidth="470.0" promptText="Search" styleClass="login" stylesheets="@../../../css/style.css">
+                     <font>
+                        <Font name="Fira Code SemiBold" size="12.0" />
+                     </font>
+                  </TextField>
+                  <Button fx:id="btnTambah" layoutX="682.0" layoutY="32.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="104.0" styleClass="login-btn" stylesheets="@../../../css/style.css" text="Tambah">
+                     <font>
+                        <Font name="Fira Code SemiBold" size="12.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnHapus" mnemonicParsing="false" prefHeight="36.0" prefWidth="104.0" styleClass="login-btn" stylesheets="@../../../css/style.css" text="Hapus">
+                     <font>
+                        <Font name="Fira Code SemiBold" size="12.0" />
+                     </font>
+                  </Button>
+               </children>
+               <padding>
+                  <Insets right="20.0" />
+               </padding>
+            </HBox>
+            <VBox prefHeight="471.0" prefWidth="782.0">
+               <children>
+                  <HBox prefHeight="430.0" prefWidth="782.0" VBox.vgrow="ALWAYS">
+                     <children>
+                        <ScrollPane prefHeight="467.0" prefWidth="782.0" HBox.hgrow="ALWAYS">
+                           <content>
+                              <GridPane fx:id="GPresep" prefHeight="30.0" prefWidth="0.0">
+                                <rowConstraints>
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                </rowConstraints>
+                              </GridPane>
+                           </content>
+                        </ScrollPane>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </children>
+</VBox>

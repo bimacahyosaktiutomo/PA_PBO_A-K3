@@ -1,0 +1,46 @@
+.poppins-medium {
+    -fx-font-family: "Poppins", sans-serif;
+    -fx-font-weight: 600;
+    -fx-font-style: normal;
+
+}
+
+.rekomenButton{
+    -fx-background-color: #FFDB67;
+
+}
+
+.rekomen :hover {
+    -fx-background-color: #f4ce52;
+}
+
+.Header {
+    -fx-background-color: white;
+}
+
+.body {
+    -fx-background-color: rgb(251, 247, 247);
+}
+
+.login{
+    -fx-background-radius: 50;
+    -fx-border-radius: 50;
+    -fx-border-width: 5px;
+}
+
+.login-btn{
+    -fx-background-radius: 50px;
+    -fx-border-radius: 50px;
+    -fx-border-width: 5px;
+    -fx-background-color: #FFDB67;
+}
+
+.changeMouse:hover {
+    -fx-cursor: pointer;
+}
+
+.cardShape {
+    -fx-background-radius: 50px;
+    -fx-border-radius: 50px;
+    -fx-border-width: 5px;
+}

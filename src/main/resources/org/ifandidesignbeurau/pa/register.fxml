@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="405.0" prefWidth="559.0" spacing="15.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.ifandidesignbeurau.pa.RegisterController">
+   <children>
+      <Label text="Register">
+         <VBox.margin>
+            <Insets top="30.0" />
+         </VBox.margin>
+         <font>
+            <Font name="Fira Code SemiBold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="txtWarning" text="Username atau email sudah ada!" textFill="RED">
+         <font>
+            <Font name="Fira Code SemiBold" size="12.0" />
+         </font>
+      </Label>
+      <HBox alignment="CENTER" prefHeight="55.0" prefWidth="200.0">
+         <children>
+            <TextField fx:id="txtUsernameRegis" prefHeight="38.0" prefWidth="404.0" promptText="Username" styleClass="login" stylesheets="@../../../css/style.css">
+               <font>
+                  <Font name="Fira Code SemiBold" size="12.0" />
+               </font>
+            </TextField>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="55.0" prefWidth="200.0">
+         <children>
+            <PasswordField fx:id="txtPasswordRegis" prefHeight="38.0" prefWidth="404.0" promptText="Password" styleClass="login" stylesheets="@../../../css/style.css">
+               <font>
+                  <Font name="Fira Code SemiBold" size="12.0" />
+               </font>
+            </PasswordField>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="55.0" prefWidth="200.0">
+         <children>
+            <TextField fx:id="txtEmailRegis" prefHeight="38.0" prefWidth="404.0" promptText="Email" styleClass="login" stylesheets="@../../../css/style.css">
+               <font>
+                  <Font name="Fira Code SemiBold" size="12.0" />
+               </font>
+            </TextField>
+         </children>
+      </HBox>
+      <HBox alignment="BOTTOM_CENTER" layoutX="10.0" layoutY="223.0" prefHeight="55.0" prefWidth="200.0">
+         <children>
+            <Button fx:id="btnRegister" mnemonicParsing="false" onAction="#btnRegisterClicked" prefHeight="34.0" prefWidth="283.0" styleClass="login-btn" stylesheets="@../../../css/style.css" text="Register">
+               <font>
+                  <Font name="Fira Code SemiBold" size="12.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="27.0" prefWidth="559.0">
+         <children>
+            <Label alignment="TOP_CENTER" text="Sudah punya akun ?">
+               <font>
+                  <Font name="Fira Code SemiBold" size="12.0" />
+               </font>
+            </Label>
+            <Hyperlink fx:id="hyperLogin" onAction="#HyperLoginClicked" text="Login" textFill="#4cbc27">
+               <font>
+                  <Font name="Fira Code SemiBold" size="12.0" />
+               </font>
+            </Hyperlink>
+         </children>
+      </HBox>
+   </children>
+</VBox>
