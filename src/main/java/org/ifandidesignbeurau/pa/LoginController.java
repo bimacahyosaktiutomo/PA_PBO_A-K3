@@ -38,6 +38,9 @@ public class LoginController implements Initializable {
 
     public void initialize (URL location, ResourceBundle resource){
         txtWarning.setVisible(false);
+
+        Alat.addTextLimiter(txtUsername, 11);
+        Alat.addPasswordLimiter(txtPassword, 11);
     }
 
     //METHOD

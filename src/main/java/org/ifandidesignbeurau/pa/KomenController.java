@@ -45,6 +45,7 @@ public class KomenController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         Platform.runLater(() -> RefreshKomen(idResep));
+        Alat.addTextAreaLimiter(txtKomentar, 100);
 
         btnSubmit.setOnAction(actionEvent -> Submit());
 

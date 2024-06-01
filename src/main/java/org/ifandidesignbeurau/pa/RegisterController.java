@@ -37,6 +37,9 @@ public class RegisterController implements Initializable {
 
     public void initialize (URL location, ResourceBundle resource){
         txtWarning.setVisible(false);
+
+        Alat.addTextLimiter(txtUsernameRegis, 11);
+        Alat.addPasswordLimiter(txtPasswordRegis, 11);
     }
 
     // ACTION
