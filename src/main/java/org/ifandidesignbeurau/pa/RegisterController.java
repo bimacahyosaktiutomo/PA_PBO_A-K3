@@ -48,7 +48,7 @@ public class RegisterController implements Initializable {
 
     // METHOD
     private void Register(ActionEvent actionEvent) {
-        String username = txtUsernameRegis.getText().replaceAll("\\s", "");;
+        String username = txtUsernameRegis.getText().replaceAll("\\s", "");
         String password = txtPasswordRegis.getText();
         String email = txtEmailRegis.getText().replaceAll("\\s", "");
         try {

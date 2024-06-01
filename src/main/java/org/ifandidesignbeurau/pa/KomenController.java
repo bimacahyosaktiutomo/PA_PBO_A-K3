@@ -129,9 +129,7 @@ public class KomenController implements Initializable {
                 RatingKomenController ratingKomenController = fxmlLoader.getController();
                 ratingKomenController.setRatingKomen(idr, komen, star, uid);
             }
-        } catch (SQLException e) {
-            throw new RuntimeException(e);
-        } catch (IOException e) {
+        } catch (SQLException | IOException e) {
             throw new RuntimeException(e);
         }
     }
