@@ -129,8 +129,6 @@ public class CardController {
         btnActionEdit.setOnAction(actionEvent -> openEdit(idr));
         btnActionHapus.setOnAction(actionEvent -> Hapus(idr, nama));
         namaResep.setOnAction(actionEvent -> openDisplay(idr));
-
-
     }
 
     private void openDisplay(int idr){

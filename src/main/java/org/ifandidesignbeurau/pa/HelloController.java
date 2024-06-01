@@ -238,7 +238,6 @@ public class HelloController implements Initializable {
             HelloApplication.primaryStage.close();
             HelloApplication.HomeRefresh(stage);
         }else {
-//            PopLoginStage = stage;
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("login.fxml"));
             try {
                 if (!popup.isShowing()){
@@ -263,14 +262,12 @@ public class HelloController implements Initializable {
         try {
             FXMLLoader fxmlLoader = new FXMLLoader();
             fxmlLoader.setLocation(getClass().getResource("dashboardAdmin.fxml"));
-//            VBox cardBox = fxmlLoader.load();
 
             returnColor();
             HboxDashboardBtn.setStyle("-fx-background-color: #4cbc27;");
-//            MainContainer.getChildren().clear();
-//            MainContainer.getChildren().addFirst(fxmlLoader.load());
 
-            LobbyContainer.setContent(fxmlLoader.load());
+            MainContainer.getChildren().clear();
+            MainContainer.getChildren().add(fxmlLoader.load());
         }catch (IOException e){
             e.printStackTrace();
         }
@@ -283,10 +280,9 @@ public class HelloController implements Initializable {
 
             returnColor();
             HboxResepBtn.setStyle("-fx-background-color: #4cbc27;");
-//            MainContainer.getChildren().clear();
-//            MainContainer.getChildren().addFirst(fxmlLoader.load());
 
-            LobbyContainer.setContent(fxmlLoader.load());
+            MainContainer.getChildren().clear();
+            MainContainer.getChildren().add(fxmlLoader.load());
         }catch (IOException e){
             e.printStackTrace();
         }
