@@ -73,6 +73,7 @@ public class ResepFormController implements Initializable {
             if (setIDResep > 0) {
                 btnSelesai.setOnAction(actionEvent -> Edit("selesai", actionEvent, setIDResep));
                 btnLater.setOnAction(actionEvent -> Edit("belum", actionEvent, setIDResep));
+                imgThumbnail.setOnMouseClicked(mouseEvent -> getImage());
             } else {
                 btnSelesai.setOnAction(actionEvent -> Selesai("selesai", actionEvent));
                 btnLater.setOnAction(actionEvent -> Selesai("belum", actionEvent));
@@ -81,7 +82,6 @@ public class ResepFormController implements Initializable {
         });
 
         btnBatal.setOnAction(actionEvent -> Batal());
-        imgThumbnail.setOnMouseClicked(mouseEvent -> getImage());
     }
 
     private void getImage() {
